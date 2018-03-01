@@ -1,0 +1,17 @@
+<div *ngFor="let dir of ['h', 'v']">
+  <div *ngFor="let param of ['xs', 'xc', 'xe', 'xb', 'xa', 'yt', 'ys', 'yc', 'ye', 'yb', 'ct', 'cs', 'cc', 'ce', 'cb', 'ca']"
+    [ddFlexbox]="dir + param" [style.height]="'10rem'">
+    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">h_{{param}}_{{ii}}</label>
+  </div>
+  <div *ngFor="let param of ['w']" [ddFlexbox]="dir + param" [style.maxWidth]="'13rem'" [style.maxHeight]="'4rem'">
+    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">h_{{param}}_{{ii}}</label>
+  </div>
+</div>
+<div ddFlexbox [style.height]="'5rem'">
+  <label *ngFor="let itemParam of ['as', 'ac', 'ae', 'ab', 'at', 'aa']" [ddFlexitem]="itemParam">item_{{itemParam}}</label>
+</div>
+<div ddFlexbox [style.height]="'5rem'">
+  <div *ngFor="let itemParam of ['0 1', '1 1', '2 1', '2 1', '1 1', '0 1 5rem']" [ddFlexitem]="itemParam">
+    <label>{{itemParam}}</label>
+  </div>
+</div>
