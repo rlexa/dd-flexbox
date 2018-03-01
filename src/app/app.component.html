@@ -1,3 +1,32 @@
+<!-- main: vbox -->
+<div ddFlexbox="v">
+  <!-- menu: hbox with centered content -->
+  <div ddFlexbox="xcyc">
+    <button>Overview</button>
+    <button>Projects</button>
+    <button>Partner</button>
+  </div>
+  <!-- content: hbox -->
+  <div ddFlexbox>
+    <!-- sidebar: no grow or shrink in parent, itself a vbox with content to the right -->
+    <div ddFlexitem="0 0" ddFlexbox="vye">
+      <!-- label: position self left in parent -->
+      <h3 ddFlexitem="as">Do:</h3>
+      <button>Action 1</button>
+      <button>Action 2</button>
+      <button>Action 3</button>
+    </div>
+    <!-- data view: hbox which auto-wraps content -->
+    <div ddFlexbox="w">
+      <!-- data items: cards with different min width -->
+      <div *ngFor="let card of [1,2,3,4,5,6,7,8,9,10]" ddFlexitem="0 0 {{ 1 + card%3 }}00px" ddFlexbox="v">
+        <h4>Card {{card}}</h4>
+        <label>Text Card Text Card Text Card</label>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div *ngFor="let dir of ['h', 'v']">
   <div *ngFor="let param of ['xs', 'xc', 'xe', 'xb', 'xa', 'yt', 'ys', 'yc', 'ye', 'yb', 'ct', 'cs', 'cc', 'ce', 'cb', 'ca']"
     [ddFlexbox]="dir + param" [style.height]="'10rem'">
