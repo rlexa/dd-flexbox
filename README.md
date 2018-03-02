@@ -7,7 +7,7 @@ DdFlexbox and ddFlexitem ([Source]) are [Angular] directives for `display: flex;
 
 ## Info
 
-Both directives can be used on same element. Directive's parameters can be mixed together in any order (and can be separated by spaces) e.g. `ddFlexbox="vycw"` denotes a vbox (`flex-direction: row;`) with items centered horizontally and auto-wrapping.  Handles setting of flex based style parameters on the target element. Useful for layouting done directly in templates and generally separating layouting from visuals which can stay in CSS.
+Handles setting of flex based style parameters on the target element. Useful for layouting done directly in templates and generally separating layouting from visuals which can stay in CSS. Both directives can be used on same element. Directive's parameters can be mixed together in any order (and can be separated by spaces) e.g. `ddFlexbox="vycw"` denotes a vbox (`flex-direction: column;`) with items centered horizontally and with auto-wrapping.
 
 ## HowTo: Example of flexible layout with top menu, sidebar and auto-wrapping data view
 
