@@ -5,7 +5,7 @@ import { FlexboxDirective } from './flexbox.directive';
 // GENERAL
 
 describe('FlexboxDirective', () => {
-  it('should create an instance', () => {
+  test('should create an instance', () => {
     const directive = new FlexboxDirective();
     expect(directive).toBeTruthy();
   });
@@ -19,7 +19,7 @@ const STYLE_DEFAULT_FLEXBOX = {
   justifyContent: 'flex-start',
   alignItems: 'stretch',
   alignContent: 'stretch',
-  flexWrap: ''
+  flexWrap: 'no-wrap'
 };
 
 const STYLE_DEFAULT_FLEXITEM = {
@@ -130,10 +130,10 @@ describe('FlexboxDirective: parameter', () => {
     target = fixture.debugElement.nativeElement.querySelector('div');
   });
 
-  it('should have target container', () => { expect(target).toBeTruthy(); });
+  test('should have target container', () => { expect(target).toBeTruthy(); });
 
   testsFlexbox.forEach(ii =>
-    it('should evaluate ddFlexbox parameter "' + ii.param + '": ' + ii.info, () => {
+    test('should evaluate ddFlexbox parameter "' + ii.param + '": ' + ii.info, () => {
       component.paramsFlexbox = ii.param;
       fixture.detectChanges();
       Object.keys(ii.styles).forEach(key => expect(key + ': ' + target.style[key]).toBe(key + ': ' + ii.styles[key]));
@@ -141,7 +141,7 @@ describe('FlexboxDirective: parameter', () => {
   );
 
   testsFlexitem.forEach(ii =>
-    it('should evaluate ddFlexitem parameter "' + ii.param + '": ' + ii.info, () => {
+    test('should evaluate ddFlexitem parameter "' + ii.param + '": ' + ii.info, () => {
       component.paramsFlexitem = ii.param;
       fixture.detectChanges();
       Object.keys(ii.styles).forEach(key => expect(key + ': ' + target.style[key]).toBe(key + ': ' + ii.styles[key]));
