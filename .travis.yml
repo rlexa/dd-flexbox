@@ -1,9 +1,29 @@
+# travis
+
+# no root needed
 sudo: false
 
+# node.js environment
 language: node_js
 node_js:
   - 9
 
+# git
 branches:
   only:
     - master
+
+# prereqs
+## firebase-tools - needed for hosting on https://firebase.google.com/
+## @angular/cli - building angular app
+before_script:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli
+
+# building app
+script:
+  - ng build --prod
+
+# deploy
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
