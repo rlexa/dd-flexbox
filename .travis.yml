@@ -7,9 +7,3 @@ node_js:
 branches:
   only:
     - master
-
-deploy:
-  provider: heroku
-  app: "dd-flexbox"
-  api_key:
-    secure: "b1b194d4-524d-41d5-962f-cd2b3e811b02"
