@@ -1,3 +1,4 @@
+<h2>Page Layout Example:</h2>
 <!-- main: vbox -->
 <div ddFlexbox="v">
   <!-- menu: hbox with centered content -->
@@ -27,18 +28,23 @@
   </div>
 </div>
 
+<h2>ddFlexbox Value Combinations:</h2>
 <div *ngFor="let dir of ['h', 'v']">
   <div *ngFor="let param of ['xs', 'xc', 'xe', 'xb', 'xa', 'yt', 'ys', 'yc', 'ye', 'yb', 'ct', 'cs', 'cc', 'ce', 'cb', 'ca']"
     [ddFlexbox]="dir + param" [style.height]="'10rem'">
-    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">h_{{param}}_{{ii}}</label>
+    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">{{dir}}_{{param}}_{{ii}}</label>
   </div>
   <div *ngFor="let param of ['w']" [ddFlexbox]="dir + param" [style.maxWidth]="'13rem'" [style.maxHeight]="'4rem'">
-    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">h_{{param}}_{{ii}}</label>
+    <label *ngFor="let ii of [1,2,3,4,5]" [style.fontSize]="'1.' + ii + 'rem'">{{dir}}_{{param}}_{{ii}}</label>
   </div>
 </div>
+
+<h2>ddFlexitem Value Combinations (in ddFlexbox h):</h2>
 <div ddFlexbox [style.height]="'5rem'">
   <label *ngFor="let itemParam of ['as', 'ac', 'ae', 'ab', 'at', 'aa']" [ddFlexitem]="itemParam">item_{{itemParam}}</label>
 </div>
+
+<h2>ddFlexitem Size Combinations:</h2>
 <div ddFlexbox [style.height]="'5rem'">
   <div *ngFor="let itemParam of ['0 1', '1 1', '2 1', '2 1', '1 1', '0 1 5rem']" [ddFlexitem]="itemParam">
     <label>{{itemParam}}</label>
