@@ -1,9 +1,6 @@
-[Angular]: https://angular.io/ "Angular UI Framework"
-[Source]: https://github.com/rlexa/dd-flexbox "Source Code"
-
 # ddFlexbox, ddFlexitem
 
-DdFlexbox and ddFlexitem ([Source]) are [Angular] directives for `display: flex;` based layouting.
+DdFlexbox and ddFlexitem ([Source Code]) are [Angular UI Framework] directives for `display: flex;` based layouting. See [Deployed Site] for project's CI built template view.
 
 ## Info
 
@@ -84,3 +81,7 @@ Handles setting of flex based style parameters on the target element. Useful for
 ## License
 
 MIT
+
+[Angular UI Framework]: https://angular.io
+[Deployed Site]: https://dd-flexbox.firebaseapp.com
+[Source Code]: https://github.com/rlexa/dd-flexbox
