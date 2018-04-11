@@ -11,5 +11,5 @@ branches:
 deploy:
   provider: firebase
   token:
-    secure: "$FIREBASE_TOKEN" # TODO need to 'firebase login:ci' first... damn this proxy!
+    secure: "$FIREBASE_TOKEN"
   message: "travis"
