@@ -8,11 +8,13 @@ branches:
   only:
     - master
 
-before_deploy:
-  npm run build
+before_script:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli
 
-deploy:
-  provider: firebase
-  token:
-    secure: "$FIREBASE_TOKEN"
-  message: "travis"
+script:
+  - npm run test
+  - npm run build
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
