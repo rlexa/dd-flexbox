@@ -1,3 +1,9 @@
+# 0.10.1
+
+### Upgrades
+
+* **dependencies:** updated dependencies, fixed jest tests
+
 # 0.10.0
 
 ### Breaking Changes
