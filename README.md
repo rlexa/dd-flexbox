@@ -43,45 +43,45 @@ Handles setting of flex based style parameters on the target element. Useful for
 
 ### ddFlexbox
 
-| CSS Targeted | Css Value | Parameter | Info |
-| - | - | - | - |
-| display | flex | - | default (auto-set) |
-| flex-direction | row | `h` (default) | hbox |
-| | column | `v` | vbox |
-| flex-wrap | wrap | `w` | auto-wrap mode (default is 'no-wrap') |
-| justify-content | flex-start | `xs` (default) | pack content at beginning of flex-direction |
-| | center | `xc` | ... |
-| | flex-end | `xe` | ... |
-| | space-between | `xb` | ... |
-| | space-around | `xa` | ... |
-| align-items | flex-start | `ys` | pack content at beginning 90° to flex-direction |
-| | center | `yc` | ... |
-| | flex-end | `ye` | ... |
-| | baseline | `yb` | ... |
-| | stretch | `yt` (default) | ... |
-| align-content | flex-start | `cs` | aligning lines when wrapped (yeah I know, see docs) |
-| | center | `cc` | ... |
-| | flex-end | `ce` | ... |
-| | space-between | `cb` | ... |
-| | space-around | `ca` | ... |
-| | stretch | `ct` (default) | ... |
+| CSS Targeted    | Css Value     | Parameter      | Info                                                |
+| --------------- | ------------- | -------------- | --------------------------------------------------- |
+| display         | flex          | -              | default (auto-set)                                  |
+| flex-direction  | row           | `h` (default)  | hbox                                                |
+|                 | column        | `v`            | vbox                                                |
+| flex-wrap       | wrap          | `w`            | auto-wrap mode (default is 'no-wrap')               |
+| justify-content | flex-start    | `xs` (default) | pack content at beginning of flex-direction         |
+|                 | center        | `xc`           | ...                                                 |
+|                 | flex-end      | `xe`           | ...                                                 |
+|                 | space-between | `xb`           | ...                                                 |
+|                 | space-around  | `xa`           | ...                                                 |
+| align-items     | flex-start    | `ys`           | pack content at beginning 90° to flex-direction     |
+|                 | center        | `yc`           | ...                                                 |
+|                 | flex-end      | `ye`           | ...                                                 |
+|                 | baseline      | `yb`           | ...                                                 |
+|                 | stretch       | `yt` (default) | ...                                                 |
+| align-content   | flex-start    | `cs`           | aligning lines when wrapped (yeah I know, see docs) |
+|                 | center        | `cc`           | ...                                                 |
+|                 | flex-end      | `ce`           | ...                                                 |
+|                 | space-between | `cb`           | ...                                                 |
+|                 | space-around  | `ca`           | ...                                                 |
+|                 | stretch       | `ct` (default) | ...                                                 |
 
 ### ddFlexitem
 
-| CSS Targeted | Css Value | Parameter |
-| - | - | - |
-| align-self | flex-start | `as` |
-|  | center | `ac` |
-|  | flex-end | `ae` |
-|  | baseline | `ab` |
-|  | stretch | `at` |
-|  | auto | `aa` (default if empty) |
-| flex | `<grow> <shrink> {size}` | `<grow> <shrink> {size}` (default is `0 1 auto`) |
+| CSS Targeted | Css Value                | Parameter                                        |
+| ------------ | ------------------------ | ------------------------------------------------ |
+| align-self   | flex-start               | `as`                                             |
+|              | center                   | `ac`                                             |
+|              | flex-end                 | `ae`                                             |
+|              | baseline                 | `ab`                                             |
+|              | stretch                  | `at`                                             |
+|              | auto                     | `aa` (default if empty)                          |
+| flex         | `<grow> <shrink> {size}` | `<grow> <shrink> {size}` (default is `0 1 auto`) |
 
 ## License
 
 MIT
 
-[Angular UI Framework]: https://angular.io
-[Deployed Site]: https://dd-flexbox.firebaseapp.com
-[Source Code]: https://github.com/rlexa/dd-flexbox
+[angular ui framework]: https://angular.io
+[deployed site]: https://dd-flexbox.firebaseapp.com
+[source code]: https://github.com/rlexa/dd-flexbox
