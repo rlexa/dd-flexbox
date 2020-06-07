@@ -5,7 +5,7 @@
     "npm publish dist": "publish to npm"
   },
   "name": "dd-flexbox",
-  "version": "7.0.0",
+  "version": "9.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
